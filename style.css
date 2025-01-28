@@ -1,0 +1,72 @@
+.first-color { 
+	background: #d3d6db; 
+}
+	
+.second-color { 
+	background: #3a4750; 
+}
+
+.third-color { 
+	background: #303841; 
+}
+
+.fourth-color { 
+	background: #be3144; 
+}
+
+
+body {
+	background-color:#d3d6db;
+	color:#303841;
+	font-family:Courier Prime, Courier New, Consolas, Roboto Mono, Arial;
+}
+
+hr {
+	height:3px;
+	border-color: #be3144;
+	background-color: #be3144;
+	margin-top: 0px;
+}
+
+.topnav {
+  background-color: #3a4750;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #303841;
+  color: #d3d6db;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #be3144;
+  color: #d3d6db;
+}
+
+.footer {
+	display: grid;
+	background-color: #303841;
+	align-content: center;
+	grid-template-columns: auto auto auto auto;
+}
+
+.footeritem {
+	color: #be3144;
+	text-align:center;
+}
+
+.footeritem:hover {
+	color: #d3d6db;
+}
