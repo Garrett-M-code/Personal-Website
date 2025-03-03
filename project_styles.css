@@ -5,7 +5,7 @@ hr {
 	margin-top: 0px;
 }
 
-.projodr {
+.project-organizer {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -14,7 +14,7 @@ hr {
 	
 }
 
-.projitem {
+.project-item {
 	height: 180px;
 	width: 180px;
 	margin: 40px;
@@ -26,28 +26,28 @@ hr {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.projitem:hover {
+.project-item:hover {
 	box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.2), 0 30px 30px 0 rgba(0, 0, 0, 0.19);
 }
 
-.projpage {
+.project-page {
 	padding: 10px;
 	font-size: 1.17em;
 	color: #303841;
 }
 
-p.projpage{
+p.project-page{
 	padding: 0px;
 	margin-left:10px;
 	font-size: 1em;
 	color: #303841;
 }
 
-.projpage:hover {
+.project-page:hover {
 	color: #000000;
 }
 
-.projimg {
+.project-img {
 	border-radius: 25px 25px 0px 0px;
 	width: 180px;
 	height:100px;

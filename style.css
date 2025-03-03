@@ -53,19 +53,21 @@ body {
 }
 
 hr.normal {
-	width: 33%;
+	width: 44%;
 	height:1px;
 	text-align: left;
 	border-color: #3a4750;
 	background-color: #303841;
 	margin-top: 0px;
-	margin-left: 0px;
+	margin-left: 30px;
 }
 
 h1 {
 	color: #be3144;
 	font-size: 72px;
 	text-shadow: 6px 6px #000000;
+	margin-left: 50px;
+	margin-bottom: 15px;
 }
 
 button {
