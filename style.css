@@ -20,6 +20,30 @@
   font-style: normal;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #d3d6db;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3a4750;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #303841;
+}
+
+/* Handle on active */
+::-webkit-scrollbar-thumb:active {
+  background: #be3144;
+}
 
 
 body {
@@ -51,6 +75,16 @@ button {
 	padding: 5px;
 	font-size: 25px;
 	font-family:Courier Prime, Courier New, Consolas, Roboto Mono, Arial;
+}
+
+button:hover {
+	background-color: #CF3E52;
+}
+
+button:active {
+  background-color: #A51427;
+  box-shadow:2px 2px #000000;
+  transform: translateY(4px);
 }
 
 .topnav {
@@ -101,3 +135,9 @@ button {
 .footeritem:hover {
 	color: #d3d6db;
 }
+
+.pdf {
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 5 / 3;
+    }
