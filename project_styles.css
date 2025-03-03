@@ -1,3 +1,10 @@
+hr {
+	height:3px;
+	border-color: #be3144;
+	background-color: #be3144;
+	margin-top: 0px;
+}
+
 .projodr {
 	display: flex;
 	flex-direction: row;
