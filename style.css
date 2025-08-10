@@ -19,7 +19,7 @@
 
 	--text-color-light: #f2f2f2;
 	--text-color-dark: #000000;
-	--text-font-header: ;
+	--text-font-header: "Press Start 2P", system-ui;
 	--text-font-body: Courier Prime, Courier New, Consolas, Roboto Mono, Arial;
 
 	--background-color: #E6E6E6;
@@ -27,10 +27,24 @@
 
 }
 
-.press-start-2p-regular {
-  font-family: "Press Start 2P", system-ui;
+.press-start-2p-large {
+  font-family: var(--text-font-header);
   font-weight: 400;
   font-style: normal;
+}
+
+.press-start-2p-regular {
+  font-family: var(--text-font-header);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2em;
+}
+
+.press-start-2p-sub {
+  font-family: var(--text-font-header);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1em;
 }
 
 /* width */
@@ -63,7 +77,7 @@ body {
 	background-color: var(--background-color);
 	background-image: var(--background-svg);
   	background-size: cover;
-  	background-repeat: no-repeat;
+  	background-repeat: repeat-y;
   	background-position: center;
 
 	color: var(--accent4);
