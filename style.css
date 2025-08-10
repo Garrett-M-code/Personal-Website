@@ -23,7 +23,7 @@
 	--text-font-body: Courier Prime, Courier New, Consolas, Roboto Mono, Arial;
 
 	--background-color: #E6E6E6;
-	--background-svg: "background-svg.svg";
+	--background-svg: url('assets/background-svg.svg');
 
 }
 
@@ -61,6 +61,11 @@
 
 body {
 	background-color: var(--background-color);
+	background-image: var(--background-svg);
+  	background-size: cover;
+  	background-repeat: no-repeat;
+  	background-position: center;
+
 	color: var(--accent4);
 	font-family: var(--text-font-body);
 }
