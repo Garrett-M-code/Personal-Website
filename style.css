@@ -136,7 +136,7 @@ button:active {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1.05em;
 }
 
 /* Change the color of links on hover */
@@ -171,9 +171,3 @@ button:active {
 	padding: auto;
 	margin: auto;
 }
-
-.pdf {
-        width: 100%;
-        height: 100%;
-        aspect-ratio: 5 / 3;
-    }
