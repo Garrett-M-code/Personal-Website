@@ -158,41 +158,6 @@ button:active {
 	margin: auto;
 }
 
-.vr {
-  border-left: 6px solid var(--accent4);
-  height: 500px;
-  padding: 5%;
-}
-
-.side-stretch {
-	width:100%;
-	height: auto;
-	background-color: var(--accent1); 
-}
-
-.footer {
-	display: grid;
-	align-content: center;
-	grid-template-columns: auto auto auto auto;
-	background-color: var(--accent4);
-	position: fixed;
-	bottom: 0px;
-	z-index: 10;
-	left:0px;
-	width: 100%;
-	height: 9%;
-
-}
-
-.footeritem {
-	color: var(--accent1);
-	text-align:center;
-}
-
-.footeritem:hover {
-	color: var(--contrast);
-}
-
 .pdf {
         width: 100%;
         height: 100%;
