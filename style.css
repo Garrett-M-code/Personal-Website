@@ -1,17 +1,30 @@
-.first-color { 
-	background: #d3d6db; 
-}
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Press+Start+2P&display=swap');
+
+:root {
+	--accent1: #be3144;
+	--accent2: #A51427;
+	--accent3: #CF3E52;
+	--accent4: #303841;
+	--accent5: #3a4750;	
+
+	--contrast: #d3d6db;
+	--contrast-dark: #303841;
+
+	--shadow: #000000;
+	--border-color: #ffffff;
+
+	--taskbar: #3a4750;
+	--scrollbar: #3a4750;
 	
-.second-color { 
-	background: #3a4750; 
-}
 
-.third-color { 
-	background: #303841; 
-}
+	--text-color-light: #f2f2f2;
+	--text-color-dark: #000000;
+	--text-font-header: ;
+	--text-font-body: Courier Prime, Courier New, Consolas, Roboto Mono, Arial;
 
-.fourth-color { 
-	background: #be3144; 
+	--background-color: #E6E6E6;
+	--background-svg: "background-svg.svg";
+
 }
 
 .press-start-2p-regular {
@@ -27,45 +40,45 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #d3d6db;
+  background: var(--contrast);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #3a4750;
+  background: var(--scrollbar);
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #303841;
+  background: var(--accent4);
 }
 
 /* Handle on active */
 ::-webkit-scrollbar-thumb:active {
-  background: #be3144;
+  background: var(--accent1);
 }
 
 
 body {
-	background-color:#E6E6E6;
-	color:#303841;
-	font-family:Courier Prime, Courier New, Consolas, Roboto Mono, Arial;
+	background-color: var(--background-color);
+	color: var(--accent4);
+	font-family: var(--text-font-body);
 }
 
 hr.normal {
 	width: 44%;
 	height:1px;
 	text-align: left;
-	border-color: #3a4750;
-	background-color: #303841;
+	border-color: var(--accent5);
+	background-color: var(--accent4);
 	margin-top: 0px;
 	margin-left: 30px;
 }
 
 h1 {
-	color: #be3144;
+	color: var(--accent1);
 	font-size: 72px;
-	text-shadow: 6px 6px #000000;
+	text-shadow: 6px 6px var(--shadow);
 	margin-left: 50px;
 	margin-bottom: 15px;
 }
@@ -73,9 +86,9 @@ h1 {
 button {
 	border-radius: 10px;
 	border: none;
-	background-color:#be3144;
-	color: #f2f2f2;
-	box-shadow:3px 3px #000000;
+	background-color: var(--accent1);
+	color: var(--text-color-light);
+	box-shadow:3px 3px var(--shadow);
 	margin: 5px;
 	padding: 5px;
 	font-size: 25px;
@@ -83,24 +96,24 @@ button {
 }
 
 button:hover {
-	background-color: #CF3E52;
+	background-color: var(--accent3);
 }
 
 button:active {
-  background-color: #A51427;
-  box-shadow:2px 2px #000000;
+  background-color: var(--accent2);
+  box-shadow:2px 2px var(--shadow);
   transform: translateY(4px);
 }
 
 .topnav {
-  background-color: #3a4750;
+  background-color: var(--taskbar);
   overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
-  color: #f2f2f2;
+  color: var(--text-color-light);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -109,14 +122,14 @@ button:active {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #303841;
-  color: #d3d6db;
+  background-color: var(--accent4);
+  color: var(--contrast);
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #be3144;
-  color: #d3d6db;
+  background-color: var(--accent1);
+  color: var(--contrast);
 }
 
 .color-scheme {
@@ -124,12 +137,12 @@ button:active {
 	text-align: center;
 	height: 15px;
 	width: 15px;
-	border: 3px solid #ffffff;
+	border: 3px solid var(--border-color);
 	margin: 10px;
 }
 
 .color-scheme:hover {
-	border: 4px solid #ffffff;
+	border: 4px solid var(--border-color);
 }
 
 .main-content-pane {
@@ -141,7 +154,7 @@ button:active {
 }
 
 .vr {
-  border-left: 6px solid #303841;
+  border-left: 6px solid var(--accent4);
   height: 500px;
   padding: 5%;
 }
@@ -149,14 +162,14 @@ button:active {
 .side-stretch {
 	width:100%;
 	height: auto;
-	background-color: #be3144; 
+	background-color: var(--accent1); 
 }
 
 .footer {
 	display: grid;
 	align-content: center;
 	grid-template-columns: auto auto auto auto;
-	background-color: #303841;
+	background-color: var(--accent4);
 	position: fixed;
 	bottom: 0px;
 	z-index: 10;
@@ -167,12 +180,12 @@ button:active {
 }
 
 .footeritem {
-	color: #be3144;
+	color: var(--accent1);
 	text-align:center;
 }
 
 .footeritem:hover {
-	color: #d3d6db;
+	color: var(--contrast);
 }
 
 .pdf {
