@@ -10,7 +10,7 @@
 	--contrast: #d3d6db;
 	--contrast-dark: #303841;
 
-	--shadow: #000000;
+	--shadow: #4b0505;
 	--border-color: #ffffff;
 
 	--taskbar: #3a4750;
@@ -31,6 +31,7 @@
   font-family: var(--text-font-header);
   font-weight: 400;
   font-style: normal;
+  font-size: 4em;
 }
 
 .press-start-2p-regular {
@@ -49,7 +50,7 @@
 
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 0.56em;
 }
 
 /* Track */
@@ -82,36 +83,37 @@ body {
 
 	color: var(--accent4);
 	font-family: var(--text-font-body);
+	font-size: 100%;
 }
 
 hr.normal {
 	width: 44%;
-	height:1px;
+	height:0.1em;
 	text-align: left;
 	border-color: var(--accent5);
 	background-color: var(--accent4);
-	margin-top: 0px;
-	margin-left: 30px;
+	margin-top: 0em;
+	margin-left: 1.2%;
 }
 
 h1 {
 	color: var(--accent1);
-	font-size: 72px;
-	text-shadow: 6px 6px var(--shadow);
-	margin-left: 50px;
-	margin-bottom: 15px;
+	text-shadow: 0.1em 0.1em var(--shadow);
+	margin-left: 3%;
+	margin-bottom: 1.5%;
+	margin-top: 1.5%;
 }
 
 button {
-	border-radius: 10px;
+	border-radius: 0.15em;
 	border: none;
 	background-color: var(--accent1);
 	color: var(--text-color-light);
-	box-shadow:3px 3px var(--shadow);
-	margin: 5px;
-	padding: 5px;
-	font-size: 25px;
-	font-family:Courier Prime, Courier New, Consolas, Roboto Mono, Arial;
+	box-shadow:0.25em 0.25em var(--shadow);
+	margin: 0.25em;
+	padding: 0.3em;
+	font-size: 1.2em;
+	font-family: var(--text-font-body);
 }
 
 button:hover {
@@ -120,8 +122,8 @@ button:hover {
 
 button:active {
   background-color: var(--accent2);
-  box-shadow:2px 2px var(--shadow);
-  transform: translateY(4px);
+  box-shadow:0.15em 0.15em var(--shadow);
+  transform: translateY(0.2em);
 }
 
 .topnav {
@@ -134,7 +136,7 @@ button:active {
   float: left;
   color: var(--text-color-light);
   text-align: center;
-  padding: 14px 16px;
+  padding: 0.87em 0.9em;
   text-decoration: none;
   font-size: 1.05em;
 }
@@ -154,14 +156,14 @@ button:active {
 .color-scheme {
 	float: right;
 	text-align: center;
-	height: 15px;
-	width: 15px;
-	border: 3px solid var(--border-color);
-	margin: 10px;
+	height: 0.95em;
+	width: 0.95em;
+	border: 0.15em solid var(--border-color);
+	margin: 0.75em;
 }
 
 .color-scheme:hover {
-	border: 4px solid var(--border-color);
+	border: 0.25em solid var(--border-color);
 }
 
 .main-content-pane {
