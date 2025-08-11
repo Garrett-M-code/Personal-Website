@@ -12,6 +12,8 @@
 		
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	
+		<script src="script.js"></script>
 	</head>
 	<body>
 		<!-- Nav Bar -->
@@ -85,11 +87,11 @@
 		<hr class="normal">
 
 		<div class="button-container">
-			<button id="resume-button">Download Résumé</button>
-			<button>Email Me</button>
-			<button>Call Me</button>
-			<button>LinkedIn</button>
-			<button>Github</button>
+			<button id="resume-button" onclick="downloadResume()">Download Résumé</button>
+			<button onclick="sendEmail()">Email Me</button>
+			<button onclick="cellPhone()">Call Me</button>
+			<button onclick="redirectLinkedIn()">LinkedIn</button>
+			<button onclick="redirectGithub()">Github</button>
 		</div>
 	</body>
 </html>
