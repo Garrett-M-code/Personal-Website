@@ -27,6 +27,101 @@
 
 }
 
+body {
+	background-color: var(--background-color);
+	background-image: var(--background-svg);
+  	background-size: cover;
+  	background-repeat: repeat-y;
+  	background-position: center;
+
+	color: var(--accent4);
+	font-family: var(--text-font-body);
+	font-size: 100%;
+}
+
+hr.normal {
+	width: 44%;
+	height:0.1em;
+	text-align: left;
+	border-color: var(--accent5);
+	background-color: var(--accent4);
+	margin-top: 0em;
+	margin-left: 1.2%;
+}
+
+h1 {
+	color: var(--accent1);
+	text-shadow: 0.1em 0.1em var(--shadow);
+	margin-left: 3%;
+	margin-bottom: 1.5%;
+	margin-top: 1.5%;
+}
+
+button {
+	border-radius: 0.15em;
+	border: none;
+	background-color: var(--accent1);
+	color: var(--text-color-light);
+	box-shadow:0.25em 0.25em var(--shadow);
+	margin: 0.25em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	padding: 0.3em;
+	font-size: 1.2em;
+	font-family: var(--text-font-body);
+}
+
+button:hover {
+	background-color: var(--accent3);
+}
+
+button:active {
+  background-color: var(--accent2);
+  box-shadow:0.15em 0.15em var(--shadow);
+  transform: translateY(0.2em);
+}
+
+.topnav {
+  background-color: var(--taskbar);
+  opacity: 0.95;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: var(--text-color-light);
+  text-align: center;
+  padding: 0.87em 0.9em;
+  text-decoration: none;
+  font-size: 1.05em;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: var(--accent4);
+  color: var(--contrast);
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: var(--accent1);
+  color: var(--contrast);
+}
+
+.color-scheme {
+	float: right;
+	text-align: center;
+	height: 0.95em;
+	width: 0.95em;
+	border: 0.15em solid var(--border-color);
+	margin: 0.75em;
+}
+
+.color-scheme:hover {
+	border: 0.25em solid var(--border-color);
+}
+
 .press-start-2p-large {
   font-family: var(--text-font-header);
   font-weight: 400;
@@ -74,102 +169,66 @@
 }
 
 
-body {
-	background-color: var(--background-color);
-	background-image: var(--background-svg);
-  	background-size: cover;
-  	background-repeat: repeat-y;
-  	background-position: center;
-
-	color: var(--accent4);
-	font-family: var(--text-font-body);
-	font-size: 100%;
-}
-
-hr.normal {
-	width: 44%;
-	height:0.1em;
-	text-align: left;
-	border-color: var(--accent5);
-	background-color: var(--accent4);
-	margin-top: 0em;
-	margin-left: 1.2%;
-}
-
-h1 {
-	color: var(--accent1);
-	text-shadow: 0.1em 0.1em var(--shadow);
-	margin-left: 3%;
-	margin-bottom: 1.5%;
-	margin-top: 1.5%;
-}
-
-button {
-	border-radius: 0.15em;
-	border: none;
-	background-color: var(--accent1);
-	color: var(--text-color-light);
-	box-shadow:0.25em 0.25em var(--shadow);
-	margin: 0.25em;
-	padding: 0.3em;
-	font-size: 1.2em;
-	font-family: var(--text-font-body);
-}
-
-button:hover {
-	background-color: var(--accent3);
-}
-
-button:active {
-  background-color: var(--accent2);
-  box-shadow:0.15em 0.15em var(--shadow);
-  transform: translateY(0.2em);
-}
-
-.topnav {
-  background-color: var(--taskbar);
-  overflow: hidden;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: var(--text-color-light);
-  text-align: center;
-  padding: 0.87em 0.9em;
-  text-decoration: none;
-  font-size: 1.05em;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: var(--accent4);
-  color: var(--contrast);
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: var(--accent1);
-  color: var(--contrast);
-}
-
-.color-scheme {
-	float: right;
-	text-align: center;
-	height: 0.95em;
-	width: 0.95em;
-	border: 0.15em solid var(--border-color);
-	margin: 0.75em;
-}
-
-.color-scheme:hover {
-	border: 0.25em solid var(--border-color);
-}
-
 .main-content-pane {
 	display: flex;
     align-items: center;
     justify-content: center;
 	padding: auto;
 	margin: auto;
+}
+
+.block-text {
+	background-color: var(--accent5);
+	color: var(--text-color-light);
+	opacity: 0.80;
+	margin: 3em;
+	padding: 1em;
+}
+
+#headshot-photo {
+	margin: 3em;
+	max-width: 100%;
+	width: 30em;
+	height: auto;
+	
+}
+
+@media only screen and (max-width: 900px) {
+	.button-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+	}
+	
+	.main-content-pane {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+		padding: auto;
+		margin: auto;
+	}
+
+  	.block-text {
+		background-color: var(--accent5);
+		color: var(--text-color-light);
+		opacity: 0.80;
+		margin: 2em;
+		padding: 1em;
+	}
+
+	.headhsot-photo-parent {
+		text-align: center;
+		width: 100%;
+
+	}
+
+	#headshot-photo {
+		max-width: 100%;
+		height: auto;
+		display: inline-block;
+	}
 }
