@@ -27,6 +27,7 @@
 	--text-font-body: Courier Prime, Courier New, Consolas, Roboto Mono, Arial;
 
 	--background-color: #E6E6E6;
+	--background-blur: blur(10px);
 	--background-svg: url('assets/background-svg.svg');
 
 }
@@ -50,8 +51,8 @@ body {
 #darken-screen {
 	visibility: hidden;
 	background-color: rgba(0, 0, 0, 0.5);
-	backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+	backdrop-filter: var(--background-blur);
+    -webkit-backdrop-filter: var(--background-blur);
 
 	position: fixed;
 	top: 0;
@@ -59,6 +60,8 @@ body {
 	width: 100%;
 	height: 100%;
 	z-index: 100;
+
+	transition: visibility 0.2s;
 }
 
 body:hover {
@@ -68,17 +71,18 @@ body:hover {
 hr.normal {
 	width: 44%;
 	height:0.1em;
-	text-align: left;
+	text-align: center;
 	border-color: var(--accent5);
 	background-color: var(--accent1);
 	margin-top: 0em;
-	margin-left: 1.2%;
+	margin-left: auto;
 }
 
 h1 {
 	color: var(--accent1);
 	text-shadow: 0.1em 0.1em var(--shadow);
-	margin-left: 3%;
+	text-align: center;
+	margin-left: auto;
 	margin-bottom: 1.5%;
 	margin-top: 1.5%;
 }
@@ -328,6 +332,23 @@ button:active {
 	height: inherit;
 }
 
+.project-popup {
+	visibility: hidden;
+	background-color: var(--accent5);
+	color: var(--text-color-light);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: auto;
+
+	position: fixed;
+	width: 20%;
+	height: auto;
+	z-index: 200;
+
+	padding: 2em;
+}
+
 /* Parent container for buttons */
 .button-container {
 	display: flex;
@@ -417,5 +438,23 @@ button:active {
 		justify-content: center;
 		padding: auto;
 		margin: auto;
+	}
+
+	/* The popup for the projects */
+	.project-popup {
+		visibility: hidden;
+		background-color: var(--accent5);
+		color: var(--text-color-light);
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		margin: auto;
+
+		position: fixed;
+		width: 70%;
+		height: auto;
+		z-index: 200;
+
+		padding: 2em;
 	}
 }

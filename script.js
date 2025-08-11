@@ -1,9 +1,12 @@
 /**
  * Darkens the screen and creates a blur effect.
  */
-function darkAndBlur() {
+function darkAndBlur(option) {
     var dark = document.getElementById("darken-screen");
     dark.style.visibility = "visible";
+
+    var selectedProj = document.getElementById(option);
+    selectedProj.style.visibility = "visible";
 }
 
 /**
@@ -12,18 +15,15 @@ function darkAndBlur() {
 function lightAndClear() {
     var dark = document.getElementById("darken-screen");
     dark.style.visibility = "hidden";
+
+    var selectedProj = document.getElementsByClassName("project-popup");
+    for (var i = 0; i < selectedProj.length; i++) {
+        selectedProj[i].style.visibility = "hidden";
+    }
 }
 
-
-var elements = document.getElementsByClassName("project");
-for (var i = 0; i < elements.length; i++) {
-    // When the project is hovered over
-    elements[i].addEventListener('click', function(event) {
-        darkAndBlur();
-    });
-
-    // When the hover is removed
-    elements[i].addEventListener('mouseout', function(event) {
-        lightAndClear();
-    });
-}   
+// When the user clicks off
+var backgroundBlur = document.getElementById("darken-screen");
+backgroundBlur.addEventListener('click', function(event) {
+    lightAndClear();
+});
