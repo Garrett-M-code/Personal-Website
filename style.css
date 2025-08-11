@@ -7,6 +7,10 @@
 	--accent4: #303841;
 	--accent5: #3a4750;	
 
+	--theme1: #1284f7;
+	--theme2: #000000;
+	--theme3: #be3144;
+
 	--contrast: #d3d6db;
 	--contrast-dark: #303841;
 
@@ -116,6 +120,18 @@ button:active {
 	width: 0.95em;
 	border: 0.15em solid var(--border-color);
 	margin: 0.75em;
+}
+
+#theme-box1 {
+	background-color: var(--theme1);
+}
+
+#theme-box2 {
+	background-color: var(--theme2);
+}
+
+#theme-box3 {
+	background-color: var(--theme3);
 }
 
 .color-scheme:hover {
