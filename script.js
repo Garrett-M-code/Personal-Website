@@ -2,7 +2,7 @@
  * A function for redirecting to the projects page.
  */
 function redirectProject() {
-  window.location.href = "https://github.com/Garrett-M-code?tab=repositories";
+  window.location.href = "project.html";
 }
 
 /**

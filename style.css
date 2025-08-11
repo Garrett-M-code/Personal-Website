@@ -206,7 +206,6 @@ button:active {
 	text-align: center;
 	align-items: center;
     justify-content: center;
-;
 
 	background-color: var(--accent5);
 	color: var(--text-color-light);
@@ -238,6 +237,12 @@ button:active {
 	box-shadow: 0.7em 0.75em var(--shadow);
 	margin: 1em;
 	padding: 1em;
+}
+
+.project:hover {
+	background-color: var(--background-color);
+	box-shadow: 0.7em 0.75em var(--contrast);
+	color: var(--text-color-dark);
 }
 
 .project-photo-container {
