@@ -113,6 +113,7 @@ button:active {
   color: var(--contrast);
 }
 
+/* CSS for the color theme-changing boxes */
 .color-scheme {
 	float: right;
 	text-align: center;
@@ -122,14 +123,17 @@ button:active {
 	margin: 0.75em;
 }
 
+/* Theme 1 */
 #theme-box1 {
 	background-color: var(--theme1);
 }
 
+/* Theme 2 */
 #theme-box2 {
 	background-color: var(--theme2);
 }
 
+/* Theme 3 */
 #theme-box3 {
 	background-color: var(--theme3);
 }
@@ -138,6 +142,7 @@ button:active {
 	border: 0.25em solid var(--border-color);
 }
 
+/* External Font theme of Block lettering */
 .press-start-2p-large {
   font-family: var(--text-font-header);
   font-weight: 400;
@@ -159,6 +164,7 @@ button:active {
   font-size: 1em;
 }
 
+/* Scrollbar stylization*/
 /* width */
 ::-webkit-scrollbar {
   width: 0.56em;
@@ -192,6 +198,7 @@ button:active {
 	margin: auto;
 }
 
+/*About section block text */
 .block-text {
 	background-color: var(--accent5);
 	color: var(--text-color-light);
@@ -200,6 +207,7 @@ button:active {
 	padding: 1em;
 }
 
+/* Block text for other sections */
 .block-text-resize {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -220,6 +228,7 @@ button:active {
 	margin: auto;
 }
 
+/* Project boxes stylization */
 .project-container-parent {
 	display: flex;
     align-items: center;
@@ -256,6 +265,7 @@ button:active {
 	height: inherit;
 }
 
+/* Parent container for buttons */
 .button-container {
 	display: flex;
 	align-items: center;
@@ -264,6 +274,7 @@ button:active {
 	margin-top: 1.1em;
 }
 
+/* Headshot photo settings */
 #headshot-photo {
 	margin: 3em;
 	max-width: 100%;
@@ -277,7 +288,9 @@ button:active {
 	width: auto;
 }
 
+/* Media query for smaller devicecs*/
 @media only screen and (max-width: 900px) {
+	/* Parent container for buttons */
 	.button-container {
 		display: flex;
 		flex-direction: column;
@@ -296,6 +309,7 @@ button:active {
 		margin: auto;
 	}
 
+	/*About section block text */
   	.block-text {
 		background-color: var(--accent5);
 		color: var(--text-color-light);
@@ -304,6 +318,7 @@ button:active {
 		padding: 1em;
 	}
 
+	/* Headshot photo settings */
 	.headhsot-photo-parent {
 		text-align: center;
 		width: 100%;
@@ -316,6 +331,7 @@ button:active {
 		display: inline-block;
 	}
 
+	/* Block text for other sections */
 	.block-text-resize {
 		display: flex;
 		flex-wrap: wrap;
@@ -329,6 +345,7 @@ button:active {
 		padding: 1em;
 	}
 
+	/* Project boxes stylization */
 	.project-container-parent {
 		display: flex;
 		flex-direction: column;
