@@ -17,3 +17,15 @@ function sendEmail() {
 function callPhone() {
   window.location.href = "tel:+14045903438";
 }
+
+function homeRedirect() {
+    location.replace("#home-header");
+}
+
+function projectsRedirect() {
+    location.replace("#project-header");
+}
+
+function contactRedirect() {
+    location.replace("#contact-header");
+}
