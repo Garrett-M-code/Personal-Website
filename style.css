@@ -48,7 +48,7 @@ hr.normal {
 	height:0.1em;
 	text-align: left;
 	border-color: var(--accent5);
-	background-color: var(--accent4);
+	background-color: var(--accent1);
 	margin-top: 0em;
 	margin-left: 1.2%;
 }
@@ -113,6 +113,44 @@ button:active {
   color: var(--contrast);
 }
 
+/* Tooltip for color scheme changer */
+.tooltip {
+  position: relative;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: var(--accent3);
+  color: var(--text-color-light);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 135%;
+  right: 0.5em;  
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+   content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 75%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent var(--accent3) transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
 /* CSS for the color theme-changing boxes */
 .color-scheme {
 	float: right;
@@ -140,6 +178,8 @@ button:active {
 
 .color-scheme:hover {
 	border: 0.25em solid var(--border-color);
+	height: 0.7em;
+	width: 0.7em;
 }
 
 /* External Font theme of Block lettering */
@@ -252,6 +292,7 @@ button:active {
 	background-color: var(--background-color);
 	box-shadow: 0.7em 0.75em var(--contrast);
 	color: var(--text-color-dark);
+	cursor: pointer;
 }
 
 .project-photo-container {
