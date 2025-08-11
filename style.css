@@ -185,10 +185,13 @@ button:active {
 }
 
 .block-text-resize {
-	display: flex;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 	text-align: center;
 	align-items: center;
     justify-content: center;
+;
+
 	background-color: var(--accent5);
 	color: var(--text-color-light);
 	opacity: 0.80;
@@ -197,8 +200,6 @@ button:active {
 }
 
 .block-box-object {
-	display: flex;
-	flex-direction: column;
 	text-align: center;
 	align-items: center;
 	margin: auto;
@@ -207,6 +208,7 @@ button:active {
 .project-container-parent {
 	display: flex;
     align-items: center;
+	text-align: center;
     justify-content: center;
 	padding: auto;
 	margin: auto;
@@ -214,6 +216,9 @@ button:active {
 
 .project {
 	background-color: var(--contrast);
+	height: 4em;
+	width: 4em;
+	box-shadow: 0.7em 0.75em var(--shadow);
 }
 
 .button-container {
@@ -233,10 +238,8 @@ button:active {
 }
 
 .icon-photo {
-	display: flex;
-	align-items: center;
-	text-align: center;
-	justify-content: center;
+	height: 5em;
+	width: auto;
 }
 
 @media only screen and (max-width: 900px) {
