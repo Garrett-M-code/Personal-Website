@@ -166,12 +166,12 @@ button:active {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: var(--contrast);
+  background: var(--scrollbar);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--scrollbar);
+  background: var(--contrast);
 }
 
 /* Handle on hover */
@@ -231,10 +231,24 @@ button:active {
 }
 
 .project {
-	background-color: var(--contrast);
-	height: 4em;
-	width: 4em;
+	background-color: var(--accent2);
+	color: var(--text-color-light);
+	height: 14em;
+	width: 14em;
 	box-shadow: 0.7em 0.75em var(--shadow);
+	margin: 1em;
+	padding: 1em;
+}
+
+.project-photo-container {
+	width: inherit;
+	height: 7em;
+	margin-bottom: 2em;
+}
+
+.project-photo {
+	width: 100%;
+	height: inherit;
 }
 
 .button-container {
@@ -299,7 +313,7 @@ button:active {
 
 	.block-text-resize {
 		display: flex;
-		flex-direction: column;
+		flex-wrap: wrap;
 		text-align: center;
 		align-items: center;
 		justify-content: center;
@@ -308,5 +322,15 @@ button:active {
 		opacity: 0.80;
 		margin: 3em;
 		padding: 1em;
+	}
+
+	.project-container-parent {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+		padding: auto;
+		margin: auto;
 	}
 }
