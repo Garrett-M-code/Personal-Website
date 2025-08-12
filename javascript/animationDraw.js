@@ -92,7 +92,7 @@ function changeTheme(theme) {
 
         backgroundColorProperty = "#E6E6E6";
         backggroundBlurProperty = "blur(10px)";
-        backgroundSVGProperty = "url('assets/background-svg.svg')";
+        backgroundSVGProperty = "url('../assets/backgrounds/background-svg-red.svg')";
 
         aninmateTheme1();
 
@@ -123,7 +123,7 @@ function changeTheme(theme) {
 
         backgroundColorProperty = "#001409";
         backggroundBlurProperty = "blur(10px)";
-        backgroundSVGProperty = "url('assets/background-svg-green.svg')";
+        backgroundSVGProperty = "url('../assets/backgrounds/background-svg-green.svg')";
 
         aninmateTheme2();
 
@@ -154,7 +154,7 @@ function changeTheme(theme) {
 
         backgroundColorProperty = "#1284f7";
         backggroundBlurProperty = "blur(10px)";
-        backgroundSVGProperty = "url('assets/background-svg-white.svg')";
+        backgroundSVGProperty = "url('../assets/backgrounds/background-svg-blue.svg')";
 
         aninmateTheme3();
 
@@ -185,7 +185,7 @@ function changeTheme(theme) {
 
         backgroundColorProperty = "#ffffff";
         backggroundBlurProperty = "blur(10px)";
-        backgroundSVGProperty = "url('assets/background-svg-white.svg')";
+        backgroundSVGProperty = "url('../assets/backgrounds/background-svg-white.svg')";
 
         aninmateTheme4();
 
