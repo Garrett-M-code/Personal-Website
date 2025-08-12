@@ -60,3 +60,14 @@ function projectsRedirect() {
 function contactRedirect() {
     location.replace("#contact-header");
 }
+
+/**
+ * Redirects to my open source contributions.
+ */
+function redirectContributions(contrib) {
+    if ("geany" === contrib) {
+      window.location.href = "https://github.com/Garrett-M-code/geany/";
+    } else if ("devdogs" === contrib) {
+      window.location.href = "https://devdogs.uga.edu/dog/Garrett-M-code";
+    }
+}
