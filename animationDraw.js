@@ -82,6 +82,8 @@ function changeTheme(theme) {
         backggroundBlurProperty = "blur(10px)";
         backgroundSVGProperty = "url('assets/background-svg.svg')";
 
+        aninmateTheme1();
+
     } else if (2 == theme) {
 
         // Green color theme properties.
@@ -106,6 +108,8 @@ function changeTheme(theme) {
         backgroundColorProperty = "--background-color";
         backggroundBlurProperty = "--background-blur";
         backgroundSVGProperty = "--background-svg";
+
+        aninmateTheme2();
 
     } else if (3 == theme) {
 
@@ -132,6 +136,8 @@ function changeTheme(theme) {
         backggroundBlurProperty = "--background-blur";
         backgroundSVGProperty = "--background-svg";
 
+        aninmateTheme3();
+
     } else {
 
         // White color theme properties.
@@ -157,6 +163,8 @@ function changeTheme(theme) {
         backggroundBlurProperty = "--background-blur";
         backgroundSVGProperty = "--background-svg";
 
+        aninmateTheme4();
+
     }     
 
     document.documentElement.style.setProperty(accent1, accent1Property);
@@ -180,4 +188,32 @@ function changeTheme(theme) {
     document.documentElement.style.setProperty(backgroundColor, backgroundColorProperty);
     document.documentElement.style.setProperty(backggroundBlur, backggroundBlurProperty);
     document.documentElement.style.setProperty(backgroundSVG, backgroundSVGProperty);
+}
+
+/**
+ * The animation for theme 1.
+ */
+function aninmateTheme1() {
+
+}
+
+/**
+ * The animation for theme 2.
+ */
+function aninmateTheme2() {
+    
+}
+
+/**
+ * The animation for theme 3.
+ */
+function aninmateTheme3() {
+    
+}
+
+/**
+ * The animation for theme 4.
+ */
+function aninmateTheme4() {
+    
 }
