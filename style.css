@@ -23,6 +23,8 @@
 	--scrollbar: #3a4750;
 	--box-opacity: 0.80;
 	
+	--equation-visibility: hidden;
+
 	--text-color-light: #f2f2f2;
 	--text-color-dark: #000000;
 	--text-font-header: "Press Start 2P", system-ui;
