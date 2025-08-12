@@ -93,27 +93,29 @@ function changeTheme(theme) {
     } else if (2 == theme) {
 
         // Green color theme properties.
-        accent1Property = "--accent1";
-        accent2Property = "--accent2";
-        accent3Property = "--accent3";
-        accent4Property = "--accent4";
-        accent5Property = "--accent5";
+        accent1Property = "#2aa62a";
+        accent2Property = "#14a516";
+        accent3Property = "#3ecf67";
+        accent4Property = "#304135";
+        accent5Property = "#3a5042";
 
-        contrastProperty = "--contrast";
-        contrastDarkProperty = "--contrast-dark";
+        contrastProperty = "#daffd9";
+        contrastDarkProperty = "#303841";
 
-        shadowProperty = "--shadow";
-        borderColorProperty = "--border-color";
+        shadowProperty = "#054b27";
+        borderColorProperty = "#ffffff";
+        highlightProperty = "#aaffa8";
 
-        taskbarProperty = "--taskbar";
-        scrollbarProperty = "--scrollbar";
+        taskbarProperty = "#3a5049";
+        scrollbarProperty = "#3a5047";
+        boxOpacityProperty = "0.80";
 
-        textColorLightProperty = "--text-color-light";
-        textColorDarkProperty = "--text-color-dark";
+        textColorLightProperty = "#f2f2f2";
+        textColorDarkProperty = "#000000";
 
-        backgroundColorProperty = "--background-color";
-        backggroundBlurProperty = "--background-blur";
-        backgroundSVGProperty = "--background-svg";
+        backgroundColorProperty = "#001409";
+        backggroundBlurProperty = "blur(10px)";
+        backgroundSVGProperty = "url('assets/background-svg-green.svg')";
 
         aninmateTheme2();
 
@@ -227,3 +229,5 @@ function aninmateTheme3() {
 function aninmateTheme4() {
     
 }
+
+//generateTheme();
