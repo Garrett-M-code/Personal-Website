@@ -1,78 +1,465 @@
-.first-color { 
-	background: #d3d6db; 
-}
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Press+Start+2P&display=swap');
+
+:root {
+	--accent1: #be3144;
+	--accent2: #A51427;
+	--accent3: #CF3E52;
+	--accent4: #303841;
+	--accent5: #3a4750;	
+
+	--theme1: #1284f7;
+	--theme2: #000000;
+	--theme3: #be3144;
+	--theme4: #ffffff;
+
+	--contrast: #d3d6db;
+	--contrast-dark: #303841;
+
+	--shadow: #4b0505;
+	--border-color: #ffffff;
+
+	--taskbar: #3a4750;
+	--scrollbar: #3a4750;
 	
-.second-color { 
-	background: #3a4750; 
-}
+	--text-color-light: #f2f2f2;
+	--text-color-dark: #000000;
+	--text-font-header: "Press Start 2P", system-ui;
+	--text-font-body: Courier Prime, Courier New, Consolas, Roboto Mono, Arial;
 
-.third-color { 
-	background: #303841; 
-}
+	--background-color: #E6E6E6;
+	--background-blur: blur(10px);
+	--background-svg: url('assets/background-svg.svg');
 
-.fourth-color { 
-	background: #be3144; 
 }
-
 
 body {
-	background-color:#d3d6db;
-	color:#303841;
-	font-family:Courier Prime, Courier New, Consolas, Roboto Mono, Arial;
+	background-color: var(--background-color);
+	background-image: var(--background-svg);
+  	background-size: cover;
+  	background-repeat: repeat-y;
+  	background-position: center;
+
+	color: var(--accent4);
+	font-family: var(--text-font-body);
+	font-size: 100%;
+
+	opacity: 0;
+	transition: opacity 0.8s;
 }
 
-hr {
-	height:3px;
-	border-color: #be3144;
-	background-color: #be3144;
-	margin-top: 0px;
+/* Gassian blur of the website */
+#darken-screen {
+	visibility: hidden;
+	background-color: rgba(0, 0, 0, 0.5);
+	backdrop-filter: var(--background-blur);
+    -webkit-backdrop-filter: var(--background-blur);
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+
+	transition: visibility 0.2s;
+}
+
+body:hover {
+	opacity: 1;
+}
+
+hr.normal {
+	width: 44%;
+	height:0.1em;
+	text-align: center;
+	border-color: var(--accent5);
+	background-color: var(--accent1);
+	margin-top: 0em;
+	margin-left: auto;
+}
+
+h1 {
+	color: var(--accent1);
+	text-shadow: 0.1em 0.1em var(--shadow);
+	text-align: center;
+	margin-left: auto;
+	margin-bottom: 1.5%;
+	margin-top: 1.5%;
+}
+
+button {
+	border-radius: 0.15em;
+	border: none;
+	background-color: var(--accent1);
+	color: var(--text-color-light);
+	box-shadow:0.25em 0.25em var(--shadow);
+	margin: 0.25em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	padding: 0.3em;
+	font-size: 1.2em;
+	font-family: var(--text-font-body);
+}
+
+button:hover {
+	background-color: var(--accent3);
+}
+
+button:active {
+  background-color: var(--accent2);
+  box-shadow:0.15em 0.15em var(--shadow);
+  transform: translateY(0.2em);
 }
 
 .topnav {
-  background-color: #3a4750;
+  background-color: var(--taskbar);
+  opacity: 0.95;
   overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
-  color: #f2f2f2;
+  color: var(--text-color-light);
   text-align: center;
-  padding: 14px 16px;
+  padding: 0.87em 0.9em;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1.05em;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #303841;
-  color: #d3d6db;
+  background-color: var(--accent4);
+  color: var(--contrast);
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #be3144;
-  color: #d3d6db;
+  background-color: var(--accent1);
+  color: var(--contrast);
 }
 
-.footer {
+/* Tooltip for color scheme changer */
+.tooltip {
+  position: relative;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: var(--accent3);
+  color: var(--text-color-light);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 135%;
+  right: 0.5em;  
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.tooltip .tooltiptext::after {
+   content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 75%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent var(--accent3) transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* CSS for the color theme-changing boxes */
+.color-scheme {
+	float: right;
+	text-align: center;
+	height: 0.95em;
+	width: 0.95em;
+	border: 0.15em solid var(--border-color);
+	margin: 0.75em;
+}
+
+/* Theme 1 */
+#theme-box1 {
+	background-color: var(--theme1);
+}
+
+/* Theme 2 */
+#theme-box2 {
+	background-color: var(--theme2);
+}
+
+/* Theme 3 */
+#theme-box3 {
+	background-color: var(--theme3);
+}
+
+/* Theme 4 */
+#theme-box4 {
+	background-color: var(--theme4);
+}
+
+.color-scheme:hover {
+	border: 0.25em solid var(--border-color);
+	height: 0.7em;
+	width: 0.7em;
+}
+
+/* External Font theme of Block lettering */
+.press-start-2p-large {
+  font-family: var(--text-font-header);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4em;
+}
+
+.press-start-2p-regular {
+  font-family: var(--text-font-header);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2em;
+}
+
+.press-start-2p-sub {
+  font-family: var(--text-font-header);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1em;
+}
+
+/* Scrollbar stylization*/
+/* width */
+::-webkit-scrollbar {
+  width: 0.56em;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--scrollbar);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--contrast);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent4);
+}
+
+/* Handle on active */
+::-webkit-scrollbar-thumb:active {
+  background: var(--accent1);
+}
+
+.main-content-pane {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	padding: auto;
+	margin: auto;
+}
+
+/*About section block text */
+.block-text {
+	background-color: var(--accent5);
+	color: var(--text-color-light);
+	opacity: 0.80;
+	margin: 3em;
+	padding: 1em;
+}
+
+/* Block text for other sections */
+.block-text-resize {
 	display: grid;
-	align-content: center;
-	grid-template-columns: auto auto auto auto;
-	background-color: #303841;
-	position: fixed;
-	bottom: 0px;
-	left:0px;
+	grid-template-columns: 1fr 1fr;
+	text-align: center;
+	align-items: center;
+    justify-content: center;
+
+	background-color: var(--accent5);
+	color: var(--text-color-light);
+	opacity: 0.80;
+	margin: 3em;
+	padding: 1em;
+}
+
+.block-box-object {
+	text-align: center;
+	align-items: center;
+	margin: auto;
+}
+
+/* Project boxes stylization */
+.project-container-parent {
+	display: flex;
+    align-items: center;
+	text-align: center;
+    justify-content: center;
+	padding: auto;
+	margin: auto;
+}
+
+.project {
+	background-color: var(--accent2);
+	color: var(--text-color-light);
+	height: 14em;
+	width: 14em;
+	box-shadow: 0.7em 0.75em var(--shadow);
+	margin: 1em;
+	padding: 1em;
+}
+
+.project:hover {
+	background-color: var(--background-color);
+	box-shadow: 0.7em 0.75em var(--contrast);
+	color: var(--text-color-dark);
+	cursor: pointer;
+}
+
+.project-photo-container {
+	width: inherit;
+	height: 7em;
+	margin-bottom: 2em;
+}
+
+.project-photo {
 	width: 100%;
-	height: 9%;
-
+	height: inherit;
 }
 
-.footeritem {
-	color: #be3144;
-	text-align:center;
+.project-popup {
+	visibility: hidden;
+	background-color: var(--accent5);
+	color: var(--text-color-light);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: auto;
+
+	position: fixed;
+	width: 20%;
+	height: auto;
+	z-index: 200;
+
+	padding: 2em;
 }
 
-.footeritem:hover {
-	color: #d3d6db;
+/* Parent container for buttons */
+.button-container {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	margin-top: 1.1em;
+}
+
+/* Headshot photo settings */
+#headshot-photo {
+	margin: 3em;
+	max-width: 100%;
+	width: 30em;
+	height: auto;
+	
+}
+
+.icon-photo {
+	height: 5em;
+	width: auto;
+}
+
+/* Media query for smaller devicecs*/
+@media only screen and (max-width: 900px) {
+	/* Parent container for buttons */
+	.button-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+	}
+	
+	.main-content-pane {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+		padding: auto;
+		margin: auto;
+	}
+
+	/*About section block text */
+  	.block-text {
+		background-color: var(--accent5);
+		color: var(--text-color-light);
+		opacity: 0.80;
+		margin: 2em;
+		padding: 1em;
+	}
+
+	/* Headshot photo settings */
+	.headhsot-photo-parent {
+		text-align: center;
+		width: 100%;
+
+	}
+
+	#headshot-photo {
+		max-width: 100%;
+		height: auto;
+		display: inline-block;
+	}
+
+	/* Block text for other sections */
+	.block-text-resize {
+		display: flex;
+		flex-wrap: wrap;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+		background-color: var(--accent5);
+		color: var(--text-color-light);
+		opacity: 0.80;
+		margin: 3em;
+		padding: 1em;
+	}
+
+	/* Project boxes stylization */
+	.project-container-parent {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+		padding: auto;
+		margin: auto;
+	}
+
+	/* The popup for the projects */
+	.project-popup {
+		visibility: hidden;
+		background-color: var(--accent5);
+		color: var(--text-color-light);
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		margin: auto;
+
+		position: fixed;
+		width: 70%;
+		height: auto;
+		z-index: 200;
+
+		padding: 2em;
+	}
 }
