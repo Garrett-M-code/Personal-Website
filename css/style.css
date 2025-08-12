@@ -23,7 +23,7 @@
 	--scrollbar: #3a4750;
 	--box-opacity: 0.80;
 	
-	--equation-visibility: hidden;
+	--equation-visibility: visible;
 
 	--text-color-light: #f2f2f2;
 	--text-color-dark: #000000;
@@ -357,6 +357,29 @@ button:active {
 
 	padding: 2em;
 }
+
+/* Styling for the equation section */
+.equation-parent {
+	visibility: var(--equation-visibility);
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+
+	padding: 1em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.equation-container {
+	border-radius: 9%;
+	border-right: 0.45em solid var(--accent1);
+	border-left: 0.45em solid var(--accent1);
+
+	height: 20em;
+	width: 40em;
+}
+
 
 /* Parent container for buttons */
 .button-container {

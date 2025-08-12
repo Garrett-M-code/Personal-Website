@@ -85,7 +85,7 @@ function changeTheme(theme) {
         scrollbarProperty = "#3a4750";
         boxOpacityProperty = "0.80";
 
-        equationVisbilityProperty = "hidden";
+        equationVisbilityProperty = "visible";
 
         textColorLightProperty = "#f2f2f2";
         textColorDarkProperty = "#000000";
@@ -116,7 +116,7 @@ function changeTheme(theme) {
         scrollbarProperty = "#3a5047";
         boxOpacityProperty = "0.80";
 
-        equationVisbilityProperty = "hidden";
+        equationVisbilityProperty = "visible";
 
         textColorLightProperty = "#f2f2f2";
         textColorDarkProperty = "#000000";
@@ -147,7 +147,7 @@ function changeTheme(theme) {
         scrollbarProperty = "#ffffff";
         boxOpacityProperty = "1";
 
-        equationVisbilityProperty = "hidden";
+        equationVisbilityProperty = "visible";
 
         textColorLightProperty = "#ffffff";
         textColorDarkProperty = "#000000";
@@ -178,7 +178,7 @@ function changeTheme(theme) {
         scrollbarProperty = "#ffffff";
         boxOpacityProperty = "1";
 
-        equationVisbilityProperty = "hidden";
+        equationVisbilityProperty = "visible";
 
         textColorLightProperty = "#ffffff";
         textColorDarkProperty = "#000000";
