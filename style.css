@@ -10,6 +10,7 @@
 	--theme1: #1284f7;
 	--theme2: #000000;
 	--theme3: #be3144;
+	--theme4: #ffffff;
 
 	--contrast: #d3d6db;
 	--contrast-dark: #303841;
@@ -199,6 +200,11 @@ button:active {
 /* Theme 3 */
 #theme-box3 {
 	background-color: var(--theme3);
+}
+
+/* Theme 4 */
+#theme-box4 {
+	background-color: var(--theme4);
 }
 
 .color-scheme:hover {
