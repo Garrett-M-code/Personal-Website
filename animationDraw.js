@@ -23,9 +23,11 @@ function changeTheme(theme) {
 
     var shadow = "--shadow";
     var borderColor = "--border-color";
+    var highlight = "--highlight";
 
     var taskbar = "--taskbar";
     var scrollbar = "--scrollbar";
+    var boxOpacity = "--box-opacity";
 
     var textColorLight = "--text-color-light";
     var textColorDark = "--text-color-dark";
@@ -46,9 +48,11 @@ function changeTheme(theme) {
 
     var shadowProperty;
     var borderColorProperty;
+    var highlightProperty;
 
     var taskbarProperty;
     var scrollbarProperty;
+    var boxOpacityProperty;
 
     var textColorLightProperty;
     var textColorDarkProperty;
@@ -71,9 +75,11 @@ function changeTheme(theme) {
 
         shadowProperty = "#4b0505";
         borderColorProperty = "#ffffff";
+        highlightProperty = "#E6E6E6";
 
         taskbarProperty = "#3a4750";
         scrollbarProperty = "#3a4750";
+        boxOpacityProperty = "0.80";
 
         textColorLightProperty = "#f2f2f2";
         textColorDarkProperty = "#000000";
@@ -141,27 +147,29 @@ function changeTheme(theme) {
     } else {
 
         // White color theme properties.
-        accent1Property = "--accent1";
-        accent2Property = "--accent2";
-        accent3Property = "--accent3";
-        accent4Property = "--accent4";
-        accent5Property = "--accent5";
+        accent1Property = "#000000";
+        accent2Property = "#000000";
+        accent3Property = "#282828";
+        accent4Property = "#545454";
+        accent5Property = "#000000";
 
-        contrastProperty = "--contrast";
-        contrastDarkProperty = "--contrast-dark";
+        contrastProperty = "#ffea00";
+        contrastDarkProperty = "#000000";
 
-        shadowProperty = "--shadow";
-        borderColorProperty = "--border-color";
+        shadowProperty = "#7f7f7f";
+        borderColorProperty = "#ffffff";
+        highlightProperty = "#eeff00";
 
-        taskbarProperty = "--taskbar";
-        scrollbarProperty = "--scrollbar";
+        taskbarProperty = "#000000";
+        scrollbarProperty = "#ffffff";
+        boxOpacityProperty = "1";
 
-        textColorLightProperty = "--text-color-light";
-        textColorDarkProperty = "--text-color-dark";
+        textColorLightProperty = "#ffffff";
+        textColorDarkProperty = "#000000";
 
-        backgroundColorProperty = "--background-color";
-        backggroundBlurProperty = "--background-blur";
-        backgroundSVGProperty = "--background-svg";
+        backgroundColorProperty = "#ffffff";
+        backggroundBlurProperty = "blur(10px)";
+        backgroundSVGProperty = "url('assets/background-svg-white.svg')";
 
         aninmateTheme4();
 
@@ -178,10 +186,12 @@ function changeTheme(theme) {
     
     document.documentElement.style.setProperty(shadow, shadowProperty);
     document.documentElement.style.setProperty(borderColor, borderColorProperty);
-    
+    document.documentElement.style.setProperty(highlight, highlightProperty);
+
     document.documentElement.style.setProperty(taskbar, taskbarProperty);
     document.documentElement.style.setProperty(scrollbar, scrollbarProperty);
-    
+    document.documentElement.style.setProperty(boxOpacity, boxOpacityProperty);
+
     document.documentElement.style.setProperty(textColorLight, textColorLightProperty);
     document.documentElement.style.setProperty(textColorDark, textColorDarkProperty);
     

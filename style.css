@@ -10,16 +10,18 @@
 	--theme1: #1284f7;
 	--theme2: #000000;
 	--theme3: #be3144;
-	--theme4: #ffffff;
+	--theme4: #ffea00;
 
 	--contrast: #d3d6db;
 	--contrast-dark: #303841;
 
 	--shadow: #4b0505;
 	--border-color: #ffffff;
+	--highlight: #E6E6E6;
 
 	--taskbar: #3a4750;
 	--scrollbar: #3a4750;
+	--box-opacity: 0.80;
 	
 	--text-color-light: #f2f2f2;
 	--text-color-dark: #000000;
@@ -273,7 +275,7 @@ button:active {
 .block-text {
 	background-color: var(--accent5);
 	color: var(--text-color-light);
-	opacity: 0.80;
+	opacity: var(--box-opacity);
 	margin: 3em;
 	padding: 1em;
 }
@@ -288,7 +290,7 @@ button:active {
 
 	background-color: var(--accent5);
 	color: var(--text-color-light);
-	opacity: 0.80;
+	opacity: var(--box-opacity);
 	margin: 3em;
 	padding: 1em;
 }
@@ -320,7 +322,7 @@ button:active {
 }
 
 .project:hover {
-	background-color: var(--background-color);
+	background-color: var(--highlight);
 	box-shadow: 0.7em 0.75em var(--contrast);
 	color: var(--text-color-dark);
 	cursor: pointer;
@@ -406,7 +408,7 @@ button:active {
   	.block-text {
 		background-color: var(--accent5);
 		color: var(--text-color-light);
-		opacity: 0.80;
+		opacity: var(--box-opacity);
 		margin: 2em;
 		padding: 1em;
 	}
@@ -433,7 +435,7 @@ button:active {
 		justify-content: center;
 		background-color: var(--accent5);
 		color: var(--text-color-light);
-		opacity: 0.80;
+		opacity: var(--box-opacity);
 		margin: 3em;
 		padding: 1em;
 	}
