@@ -379,6 +379,10 @@ button:active {
 
 /* Media query for smaller devicecs*/
 @media only screen and (max-width: 900px) {
+	body {
+		opacity: 1;
+	}
+
 	/* Parent container for buttons */
 	.button-container {
 		display: flex;
