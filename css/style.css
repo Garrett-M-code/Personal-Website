@@ -33,13 +33,14 @@
 	--background-color: #E6E6E6;
 	--background-blur: blur(10px);
 	--background-svg: url('../assets/backgrounds/background-svg-red.svg');
+	--background-svg-mobile: url('../assets/backgrounds/background-svg-red-mobile.svg');
 
 }
 
 body {	
 	background-color: var(--background-color);
 	background-image: var(--background-svg);
-  	background-size: 100vw 100vw;
+  	background-size: 100% 100%;
   	background-position: center;
 	background-repeat: no-repeat;
 	color: var(--accent4);
@@ -409,6 +410,7 @@ button:active {
 @media only screen and (max-width: 900px) {
 	body {
 		opacity: 1;
+		background-image: var(--background-svg-mobile);
 	}
 
 	/* CSS for the color theme-changing boxes */
