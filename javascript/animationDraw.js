@@ -1,4 +1,17 @@
 /**
+ * Startup animation for loading the body.
+ */
+function startupAnimation() {
+    // Sets body visibilty to zero
+    //document.getElementsByTagName("body").style.opacity = "0";
+   
+
+
+
+       
+}
+
+/**
  * Used to generate the theme for the application on startup.
  */
 function generateTheme() {
@@ -90,9 +103,9 @@ function changeTheme(theme) {
         textColorLightProperty = "#f2f2f2";
         textColorDarkProperty = "#000000";
 
-        backgroundColorProperty = "#E6E6E6";
+        backgroundColorProperty = "#000000";
         backggroundBlurProperty = "blur(10px)";
-        backgroundSVGProperty = "url('../assets/backgrounds/background-svg-red.svg')";
+        backgroundSVGProperty = "url('../assets/backgrounds/Wave Line (1).svg')";
 
         aninmateTheme1();
 
@@ -123,7 +136,7 @@ function changeTheme(theme) {
 
         backgroundColorProperty = "#001409";
         backggroundBlurProperty = "blur(10px)";
-        backgroundSVGProperty = "url('../assets/backgrounds/background-svg-green.svg')";
+        backgroundSVGProperty = "url('../assets/backgrounds/Circuit Primary.svg')";
 
         aninmateTheme2();
 
@@ -185,7 +198,7 @@ function changeTheme(theme) {
 
         backgroundColorProperty = "#ffffff";
         backggroundBlurProperty = "blur(10px)";
-        backgroundSVGProperty = "url('../assets/backgrounds/background-svg-white.svg')";
+        backgroundSVGProperty = "url('../assets/backgrounds/Cloudy (1).svg')";
 
         aninmateTheme4();
 
@@ -222,28 +235,29 @@ function changeTheme(theme) {
  * The animation for theme 1.
  */
 function aninmateTheme1() {
-
+    startupAnimation();
 }
 
 /**
  * The animation for theme 2.
  */
 function aninmateTheme2() {
-    
+   startupAnimation();
 }
 
 /**
  * The animation for theme 3.
  */
 function aninmateTheme3() {
-    
+   startupAnimation();
 }
 
 /**
  * The animation for theme 4.
  */
 function aninmateTheme4() {
-    
+    startupAnimation();
 }
 
 generateTheme();
+startupAnimation();

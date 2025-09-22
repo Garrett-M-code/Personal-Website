@@ -39,10 +39,9 @@
 body {	
 	background-color: var(--background-color);
 	background-image: var(--background-svg);
-  	background-size: cover;
-  	background-repeat: repeat-y;
+  	background-size: 100vw 100vw;
   	background-position: center;
-
+	background-repeat: no-repeat;
 	color: var(--accent4);
 	font-family: var(--text-font-body);
 	font-size: 100%;
@@ -267,7 +266,7 @@ button:active {
 
 .main-content-pane {
 	display: flex;
-    align-items: center;
+	align-items: center;
     justify-content: center;
 	padding: auto;
 	margin: auto;
@@ -289,6 +288,7 @@ button:active {
 	text-align: center;
 	align-items: center;
     justify-content: center;
+
 
 	background-color: var(--accent5);
 	color: var(--text-color-light);
@@ -410,6 +410,23 @@ button:active {
 	body {
 		opacity: 1;
 	}
+
+	/* CSS for the color theme-changing boxes */
+	.color-scheme {
+		float: right;
+		text-align: center;
+		height: 0.7em;
+		width: 0.7em;
+		border: 0.15em solid var(--border-color);
+		margin: 0.75em;
+	}
+
+	.color-scheme:hover {
+		border: 0.25em solid var(--border-color);
+		height: 0.45em;
+		width: 0.45em;
+	}
+
 
 	/* Parent container for buttons */
 	.button-container {
