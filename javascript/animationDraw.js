@@ -1,4 +1,17 @@
 /**
+ * Startup animation for loading the body.
+ */
+function startupAnimation() {
+    // Sets body visibilty to zero
+    //document.getElementsByTagName("body").style.opacity = "0";
+   
+
+
+
+       
+}
+
+/**
  * Used to generate the theme for the application on startup.
  */
 function generateTheme() {
@@ -37,6 +50,7 @@ function changeTheme(theme) {
     var backgroundColor = "--background-color";
     var backggroundBlur = "--background-blur";
     var backgroundSVG = "--background-svg";
+    var backgroundSVGMobile = "--background-svg-mobile";
 
     // CSS Values
     var accent1Property;
@@ -64,6 +78,7 @@ function changeTheme(theme) {
     var backgroundColorProperty;
     var backggroundBlurProperty;
     var backgroundSVGProperty;
+    var backgroundSVGMobileProperty;
 
     if (1 == theme) {
 
@@ -85,14 +100,15 @@ function changeTheme(theme) {
         scrollbarProperty = "#3a4750";
         boxOpacityProperty = "0.80";
 
-        equationVisbilityProperty = "hidden";
+        equationVisbilityProperty = "visible";
 
         textColorLightProperty = "#f2f2f2";
         textColorDarkProperty = "#000000";
 
-        backgroundColorProperty = "#E6E6E6";
+        backgroundColorProperty = "#000000";
         backggroundBlurProperty = "blur(10px)";
         backgroundSVGProperty = "url('../assets/backgrounds/background-svg-red.svg')";
+        backgroundSVGMobileProperty = "url('../assets/backgrounds/background-svg-red-mobile.svg')";
 
         aninmateTheme1();
 
@@ -116,7 +132,7 @@ function changeTheme(theme) {
         scrollbarProperty = "#3a5047";
         boxOpacityProperty = "0.80";
 
-        equationVisbilityProperty = "hidden";
+        equationVisbilityProperty = "visible";
 
         textColorLightProperty = "#f2f2f2";
         textColorDarkProperty = "#000000";
@@ -124,6 +140,7 @@ function changeTheme(theme) {
         backgroundColorProperty = "#001409";
         backggroundBlurProperty = "blur(10px)";
         backgroundSVGProperty = "url('../assets/backgrounds/background-svg-green.svg')";
+		backgroundSVGMobileProperty = "url('../assets/backgrounds/background-svg-green-mobile.svg')";
 
         aninmateTheme2();
 
@@ -147,7 +164,7 @@ function changeTheme(theme) {
         scrollbarProperty = "#ffffff";
         boxOpacityProperty = "1";
 
-        equationVisbilityProperty = "hidden";
+        equationVisbilityProperty = "visible";
 
         textColorLightProperty = "#ffffff";
         textColorDarkProperty = "#000000";
@@ -155,6 +172,7 @@ function changeTheme(theme) {
         backgroundColorProperty = "#1284f7";
         backggroundBlurProperty = "blur(10px)";
         backgroundSVGProperty = "url('../assets/backgrounds/background-svg-blue.svg')";
+        backgroundSVGMobileProperty = "url('../assets/backgrounds/background-svg-blue-mobile.svg')";
 
         aninmateTheme3();
 
@@ -178,14 +196,15 @@ function changeTheme(theme) {
         scrollbarProperty = "#ffffff";
         boxOpacityProperty = "1";
 
-        equationVisbilityProperty = "hidden";
+        equationVisbilityProperty = "visible";
 
         textColorLightProperty = "#ffffff";
         textColorDarkProperty = "#000000";
 
         backgroundColorProperty = "#ffffff";
         backggroundBlurProperty = "blur(10px)";
-        backgroundSVGProperty = "url('../assets/backgrounds/background-svg-white.svg')";
+        backgroundSVGProperty = "url('../assets/backgrounds/background-svg-yellow.svg')";
+        backgroundSVGMobileProperty = "url('../assets/backgrounds/background-svg-yellow-mobile.svg')";
 
         aninmateTheme4();
 
@@ -216,34 +235,36 @@ function changeTheme(theme) {
     document.documentElement.style.setProperty(backgroundColor, backgroundColorProperty);
     document.documentElement.style.setProperty(backggroundBlur, backggroundBlurProperty);
     document.documentElement.style.setProperty(backgroundSVG, backgroundSVGProperty);
+    document.documentElement.style.setProperty(backgroundSVGMobile, backgroundSVGMobileProperty);
 }
 
 /**
  * The animation for theme 1.
  */
 function aninmateTheme1() {
-
+    startupAnimation();
 }
 
 /**
  * The animation for theme 2.
  */
 function aninmateTheme2() {
-    
+   startupAnimation();
 }
 
 /**
  * The animation for theme 3.
  */
 function aninmateTheme3() {
-    
+   startupAnimation();
 }
 
 /**
  * The animation for theme 4.
  */
 function aninmateTheme4() {
-    
+    startupAnimation();
 }
 
 generateTheme();
+startupAnimation();
