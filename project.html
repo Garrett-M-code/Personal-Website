@@ -21,7 +21,31 @@
 		<!-- Screen blur and darken -->
 		<div id="darken-screen">
 			<!-- Project Popups -->
-			<div class="project-popup" id="1">
+			<div class="project-popup" id="gameboy">
+				<p>Picoboy: Gameboy from Scratch</p>
+				<p>Present</p>
+				<br/>
+				<p>
+					
+				</p>
+			</div>
+			<div class="project-popup" id="phisherman">
+				<p>Phisherman</p>
+				<p>Present</p>
+				<br/>
+				<p>
+					
+				</p>
+			</div>
+			<div class="project-popup" id="weather">
+				<p>Weather Desk IoT Device</p>
+				<p>August, 2025</p>
+				<br/>
+				<p>
+					
+				</p>
+			</div>
+			<div class="project-popup" id="music downloader">
 				<p>Youtube Music Downloader</p>
 				<p>July, 2024</p>
 				<br/>
@@ -33,7 +57,7 @@
 					Even though this project is done, it is never finished. You'll find I go back every so often to update its functionality and ensure it works with the latest versions of YouTube.
 				</p>
 			</div>
-			<div class="project-popup" id="2">
+			<div class="project-popup" id="personal website">
 				<p>Personal Website</p>
 				<p>August, 2025</p>
 				<br/>
@@ -44,7 +68,7 @@
 
 				</p>
 			</div>
-			<div class="project-popup" id="3">
+			<div class="project-popup" id="schedule builder">
 				<p>Ultimate Schedule Builder</p>
 				<p>May, 2025</p>
 				<br/>
@@ -64,7 +88,7 @@
 					This has been one of my favorite projects to work on, and I can't wait to see what else it accomplishes in its lifecycle!
 				</p>
 			</div>
-			<div class="project-popup" id="4">
+			<div class="project-popup" id="covid">
 				<p>SARS COV-19 Spread Simulator</p>
 				<p>February, 2022</p>
 				<br/>
@@ -98,24 +122,50 @@
 		<hr class="normal">
 
 		<div class="project-container-parent">
+			<!-- Gameboy -->
+			<div class="project" onclick="darkAndBlur('gameboy');">
+				<div class="project-photo-container">
+					<img class="project-photo" src="assets/project-photos/gameboy.jpg" alt="A sotck photo of a Gameboy."/>
+				</div>
+				Picoboy: Gameboy from Scratch
+			</div>
+			
+			<!-- Weather Device -->
+			<div class="project" onclick="darkAndBlur('weather');">
+				<div class="project-photo-container">
+					<img class="project-photo" src="assets/project-photos/gameboy.jpg" alt="A sotck photo of a Gameboy."/>
+				</div>
+				Weather Desk IoT 
+			</div>
+			
+			<!-- Phisherman -->
+			<div class="project" onclick="darkAndBlur('phisherman');">
+				<div class="project-photo-container">
+					<img class="project-photo" src="assets/project-photos/gameboy.jpg" alt="A sotck photo of a Gameboy."/>
+				</div>
+				Phisherman
+			</div>
+
 			<!-- Music Downloader -->
-			<div class="project" onclick="darkAndBlur(1);">
+			<div class="project" onclick="darkAndBlur('music downloader');">
 				<div class="project-photo-container">
 					<img class="project-photo" src="assets/project-photos/gameboy.jpg" alt="A sotck photo of a Gameboy."/>
 				</div>
 				Youtube Music Downloader
 			</div>
-
+		</div>
+		
+		<div class="project-container-parent">
 			<!-- Personal Website -->
-			<div class="project" onclick="darkAndBlur(2);">
+			<div class="project" onclick="darkAndBlur('personal website');">
 				<div class="project-photo-container">
 					<img class="project-photo" src="assets/project-photos/gameboy.jpg" alt="A sotck photo of a Gameboy."/>
 				</div>
 				Personal Website
 			</div>
-
+			
 			<!-- Dev Dogs App -->
-			<div class="project" onclick="darkAndBlur(3);">
+			<div class="project" onclick="darkAndBlur('schedule builder');">
 				<div class="project-photo-container">
 					<img class="project-photo" src="assets/project-photos/gameboy.jpg" alt="A sotck photo of a Gameboy."/>
 				</div>
@@ -123,7 +173,7 @@
 			</div>
 
 			<!-- COV19 -->
-			<div class="project" onclick="darkAndBlur(4);">
+			<div class="project" onclick="darkAndBlur('covid');">
 				<div class="project-photo-container">
 					<img class="project-photo" src="assets/project-photos/gameboy.jpg" alt="A sotck photo of a Gameboy."/>
 				</div>
