@@ -34,13 +34,6 @@ function sendEmail() {
 }
 
 /**
- * A function for refirecting the user to a phone call.
- */
-function callPhone() {
-  window.location.href = "tel:+14045903438";
-}
-
-/**
  * A function for refirecting the user to the home section.
  */
 function homeRedirect() {

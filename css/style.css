@@ -382,6 +382,35 @@ button:active {
 }
 
 
+/* Combined boxes */
+.combined-box-container {
+	display: flex;
+	justify-content:center;
+	align-items: center;
+}
+
+.arrow-left {
+	font-size:1.7em;
+}
+
+.arrow-right {
+	font-size:1.7em;
+}
+
+.combined-image-container {
+	width:30em;
+	height:30em;
+}
+
+.combined-text-container {
+	background-color: var(--accent5);
+	color: var(--text-color-light);
+	opacity: var(--box-opacity);
+	padding: 1em;
+	width:30em;
+	height: 30em;
+}
+
 /* Parent container for buttons */
 .button-container {
 	display: flex;
