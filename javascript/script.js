@@ -18,4 +18,30 @@ window.addEventListener('scroll', () => {
   spaceman.style.backgroundPosition = `center -${offsetY}px`;
 });
 
+document.getElementById("portfolio-btn").addEventListener("click", function() {
+	// Redirect to Portfolio Portion
+    window.location.href = "#portfolio";   
+});   
 
+document.getElementById("resume-btn").addEventListener("click", function() {
+	// Redirect to Resume Portion
+    window.location.href = "#resume";   
+});   
+
+document.getElementById("resume-to-email").addEventListener("click", function() {
+	// Email from Resume
+	const url = 'mailto:garrettmoorework@gmail.com';
+	window.open(url, '_blank');   
+});  
+
+document.getElementById("resume-to-linkedin").addEventListener("click", function() {
+	// LinkedIn from Resume
+	const url = 'https://www.linkedin.com/in/garrett-moore-/';
+	window.open(url, '_blank');
+});
+
+document.getElementById("resume-to-github").addEventListener("click", function() {
+	// Github from Resume
+	const url = 'https://github.com/Garrett-M-code';
+	window.open(url, '_blank');
+});   

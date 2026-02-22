@@ -21,33 +21,170 @@
 				<h1 class="space-grotesk-heading">Garrett Moore</h1>
 				<div class="menu-left-align">
 					<div class="menubar-button"> Home </div>
-					<div class="menubar-button"> Portfolio </div>
-					<div class="menubar-button"> Resume </div>
+					<div class="menubar-button" id="portfolio-btn"> Portfolio </div>
+					<div class="menubar-button" id="resume-btn"> Resume </div>
 				</div>
 			</div>
 		</div>
-		<div class="project-container">
+		<div class="project-container" id="portfolio">
 			
 		</div>
 		<div class="about-me">
-			Me
+			<div class="about-popup">
+				<p class="inter-body">
+					Hi, my name is Garrett, and I am a current student studying both computer systems engineering and electrical engineering at the University of Georgia. 
+					I have a passion for working on software, hardware, and the firmware that connects both domains. 
+					My journey originally started in the fall of 2017, at the age of 11. 
+					My first computer had broken from OS errors, and in the face of this adversity, I was determined to learn as much as possible about all aspects of technology. 
+					Now, over eight years later, I still have that same drive in every task I start, every lecture I learn from, and every project I complete!
+				</p>
+			</div>
+			<img src="assets/headshot-photo-fixed.jpg" style="width:30%; height: 50%; margin: 3em; margin-right: 7em;"/>
 		</div>
-		<div class="resume">
-			<p class="content-box">Hello World</p>
+		<div class="resume" id="resume">
 			<div class="resume-left-content-pane inter-body">
 				<h1 class="space-grotesk-heading"> Resume</h1>
-				<div class="resume-button">Email</div>
-				<div class="resume-button">LinkedIn</div>
-				<div class="resume-button">Github</div>
+				<div class="resume-button" id="resume-to-email">Email</div>
+				<div class="resume-button" id="resume-to-linkedin">LinkedIn</div>
+				<div class="resume-button" id="resume-to-github">Github</div>
 			</div>
-			<div class="resume-right-content-pane">
-				
+			<div class="resume-right-content-pane inter-body">
+				<div class="content-box space-grotesk-sub-heading">Experience</div>
+				<div class="content-box">
+					<div>
+						RF Engineer | Embeded Software Engineer
+						<p class="sub-text share-tech-mono-regular">Small Satellite Research Lab (SSRL)</p>
+						<p class="sub-text share-tech-mono-regular">September 2025 - Present</p>
+						<p class="sub-text share-tech-mono-regular">Athens, GA</p>
+					</div>
+					<div style="width: 50%;">
+						<ul>
+							<li>
+								Fabricated custom software defined radio circuit designs in Altium and analyzed their communication in real time using digital signal processing techniques in C++
+							</li>
+							<li>
+								Facilitated increased communication between the Embedded Systems Software and Hardware team for congruent design for interfacing the onboard radio
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="content-box">
+					<div>
+						Peer Leader/Mentor
+						<p class="sub-text share-tech-mono-regular">Engineering Academic Boot Camp (EABC)</p>
+						<p class="sub-text share-tech-mono-regular">June 2025 - August 2025</p>
+						<p class="sub-text share-tech-mono-regular">Athens, GA</p>
+					</div>
+					<div style="width: 50%;">
+						<ul>
+							<li>
+								Guided 14 incoming engineering freshmen through an intensive boot camp designed to build academic readiness, community, and confidence
+							</li>
+							<li>
+								Facilitated workshops and study sessions on foundational engineering concepts and college success strategies
+							</li>
+							<li>
+								Propelled team-building activities and group discussions to foster collaboration and a sense of belonging
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="content-box space-grotesk-sub-heading">Education</div>
+				<div class="content-box">
+					<div>
+						The University of Georgia
+						<p class="sub-text share-tech-mono-regular">Morehead Honors College</p>
+						<p class="sub-text share-tech-mono-regular">Bachelor of Science in Computer Systems Engineering</p>
+						<p class="sub-text share-tech-mono-regular">Bachelor of Science in Electrical & Electronics Engineering</p>
+						<p class="sub-text share-tech-mono-regular">Minor in Computer Science, Certificate in Cybersecurity & Privacy</p>
+						<p class="sub-text share-tech-mono-regular">Engineering Academic Boot Camp Scholar, NACME Scholar, NSLS Scholar, Zell Miller Scholarship Recipient</p>
+					</div>
+					<div>
+						<p class="sub-text">Athens, GA</p>
+						<p class="sub-text">December 2028</p>
+					</div>
+				</div>
+				<div class="content-box space-grotesk-sub-heading">Skills</div>
+				<div class="content-box">
+					<div>
+						<p>
+							Technology Concepts: 
+							<p class="sub-text share-tech-mono-regular">Linux/Unix, Networking, Version Control, CAD, Hardware Design, RF Design, Altium, KiCad, Pentesting</p>
+						</p>
+						<p>
+							Programming Languages: 
+							<p class="sub-text share-tech-mono-regular">C/C++, Java, Python, Javascript, HTML/CSS, Node.js, Julia, Matlab, LaTeX</p>
+						</p>
+						<p>
+							Professional: 
+							<p class="sub-text share-tech-mono-regular">Leadership, Cooperation, Collaboration, Critical Thinking, Communication</p>
+						</p>
+						<p>
+							Languages: 
+							<p class="sub-text share-tech-mono-regular">Fluency in English, Proficiency in Spanish</p>
+						</p>
+					</div>
+				</div>
+				<div class="content-box space-grotesk-sub-heading">Organizations</div>
+				<div class="content-box">
+					<div>
+						Head of Embedded Systems Security Research
+						<p class="sub-text share-tech-mono-regular">Advanced Research in Exploitation & Security (ARES) Lab</p>
+						<p class="sub-text share-tech-mono-regular">August 2025 - Present</p>
+						<p class="sub-text share-tech-mono-regular">Athens, GA</p>
+					</div>
+					<div style="width: 50%;">
+						<ul>
+							<li>
+								Founded the University of Georgia’s first undergraduate cybersecurity research lab, launching software and hardware exploitation projects and building 3 custom hardware-hacking tools for internal bug-bounty research
+							</li>
+							<li>
+								Engineered an open-source Microsoft Outlook extension to detect phishing attempts using artificial intelligence and remote API calls in Node JS
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="content-box">
+					<div>
+						Community Training Coordinator
+						<p class="sub-text share-tech-mono-regular">The Hack Pack</p>
+						<p class="sub-text share-tech-mono-regular">August 2024 - Present</p>
+						<p class="sub-text share-tech-mono-regular">Athens, GA</p>
+					</div>
+					<div style="width: 50%;">
+						<ul>
+							<li>
+								Organized community outreach efforts and produced over 14 training workshops in cryptography, wifi hacking, reconnaissance, binary exploitation, and reverse engineering
+							</li>
+							<li> 
+								Awarded Most Improved Teammate with 2nd place finish at the 2025 NCAE Cyber Games Southeast
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="content-box">
+					<div>
+						Algorithm's Team Focus Lead
+						<p class="sub-text share-tech-mono-regular">Dev Dogs</p>
+						<p class="sub-text share-tech-mono-regular">June 2024 - June 2025</p>
+						<p class="sub-text share-tech-mono-regular">Athens, GA</p>
+					</div>
+					<div style="width: 50%;">
+						<ul>
+							<li>
+								Streamlined the management of over 30 team members and creation of an internal documentation system as the Algorithms Team Focus Lead
+							</li>
+							<li>
+								Oversaw the integration of the Algorithms team into our full stack web application with third party APIs like CPSAT and Jenetics in Java
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="footer">
 			Footer
 		</div>
-		
 	</body>
 	<script src="./javascript/script.js"></script>
 </html>

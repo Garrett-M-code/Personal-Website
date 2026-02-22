@@ -40,6 +40,16 @@ hr {
 	background-color: var(--heading-color);
 }
 
+p.sub-text {
+	color: var(--sub-heading-color);
+}
+
+li {
+	line-height: 1.3;
+	margin: .5em;
+	padding: .1em;
+}
+
 .menubar {
 	display: flex;
 	justify-content: space-between;
@@ -108,27 +118,54 @@ hr {
 .about-me {
 	height: 100vh; 
 	width: 100%; 
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	background: url('../assets/backgrounds/waves.svg'); 
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
+.about-popup {
+	height: 50%;
+	width: 30%;
+	background-color: var(--accent-color-blue);
+	padding: 2em;
+	margin: 3em;
+	margin-left: 7em;
+}
+
 .content-box {
+	display: flex;
+	justify-content:space-between;
 	border-top: 1px solid var(--border-color);
 	padding: 1em;
+	padding-left: 0em;
 }
 
 .resume {
 	height: 100vh; 
 	width: 100%; 
+	display: flex;
+	padding: 2em;
+	padding-left: 4em;
+	padding-right: 4em;
 }
 
 .resume-left-content-pane {
-
+	height: 100%;
+	width: 25%;
+	margin: 1em;
 }
 
 .resume-right-content-pane {
-
+	height: 100%;
+	width: 75%;
+	margin: 1em;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
 }
 
 .resume-button {
