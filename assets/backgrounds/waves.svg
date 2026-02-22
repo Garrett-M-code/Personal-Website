@@ -1,0 +1,54 @@
+<svg viewBox="0 0 1000 200" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" style="background-color: #000000;">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#001a33" stop-opacity="0" />
+      <stop offset="15%" stop-color="#008eff" stop-opacity="1" />
+      <stop offset="85%" stop-color="#008eff" stop-opacity="1" />
+      <stop offset="100%" stop-color="#001a33" stop-opacity="0" />
+      <animate attributeName="x1" values="-100%; 100%; -100%" dur="40s" repeatCount="indefinite" />
+      <animate attributeName="x2" values="0%; 200%; 0%" dur="40s" repeatCount="indefinite" />
+    </linearGradient>
+
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#004a85" stop-opacity="0" />
+      <stop offset="15%" stop-color="#00c3ff" stop-opacity="0.8" />
+      <stop offset="85%" stop-color="#00c3ff" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#004a85" stop-opacity="0" />
+      <animate attributeName="x1" values="100%; -100%; 100%" dur="50s" repeatCount="indefinite" />
+      <animate attributeName="x2" values="200%; 0%; 200%" dur="50s" repeatCount="indefinite" />
+    </linearGradient>
+
+    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#002d52" stop-opacity="0" />
+      <stop offset="15%" stop-color="#00a2ff" stop-opacity="1" />
+      <stop offset="85%" stop-color="#00a2ff" stop-opacity="1" />
+      <stop offset="100%" stop-color="#002d52" stop-opacity="0" />
+      <animate attributeName="x1" values="-150%; 50%; -150%" dur="30s" repeatCount="indefinite" />
+      <animate attributeName="x2" values="-50%; 150%; -50%" dur="30s" repeatCount="indefinite" />
+    </linearGradient>
+  </defs>
+
+  <path fill="none" stroke="url(#grad1)" stroke-width="0.4" opacity="0.6">
+    <animateTransform attributeName="transform" type="translate" from="0 0" to="500 0" dur="110s" repeatCount="indefinite" />
+    <animate attributeName="d" dur="55s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1; 0.4 0 0.6 1"
+      values="M-500,100 C-250,20 0,180 250,100 S750,20 1000,100 S1250,180 1500,100;
+              M-500,100 C-250,180 0,20 250,100 S750,180 1000,100 S1250,20 1500,100;
+              M-500,100 C-250,20 0,180 250,100 S750,20 1000,100 S1250,180 1500,100" />
+  </path>
+
+  <path fill="none" stroke="url(#grad2)" stroke-width="0.3" opacity="0.5">
+    <animateTransform attributeName="transform" type="translate" from="0 0" to="-400 0" dur="95s" repeatCount="indefinite" />
+    <animate attributeName="d" dur="42s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1; 0.4 0 0.6 1"
+      values="M0,90 Q200,30 400,90 T800,90 T1200,90 T1400,90;
+              M0,110 Q200,170 400,110 T800,110 T1200,110 T1400,110;
+              M0,90 Q200,40 400,90 T800,90 T1200,90 T1400,90" />
+  </path>
+
+  <path fill="none" stroke="url(#grad3)" stroke-width="0.2" opacity="0.8">
+    <animateTransform attributeName="transform" type="translate" from="0 0" to="600 0" dur="160s" repeatCount="indefinite" />
+    <animate attributeName="d" dur="32s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1; 0.4 0 0.6 1"
+      values="M-600,100 S-300,40 0,100 S300,160 600,100 S900,40 1200,100 S1500,160 1600,100;
+              M-600,100 S-300,160 0,100 S300,40 600,100 S900,160 1200,100 S1500,40 1600,100;
+              M-600,100 S-300,40 0,100 S300,160 600,100 S900,40 1200,100 S1500,160 1600,100" />
+  </path>
+</svg>
