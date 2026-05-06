@@ -34,8 +34,20 @@ document.getElementById("resume-to-email").addEventListener("click", function() 
 	window.open(url, '_blank');   
 });  
 
+document.getElementById("email-footer").addEventListener("click", function() {
+	// Email from Footer
+	const url = 'mailto:garrettmoorework@gmail.com';
+	window.open(url, '_blank');   
+});  
+
 document.getElementById("resume-to-linkedin").addEventListener("click", function() {
 	// LinkedIn from Resume
+	const url = 'https://www.linkedin.com/in/garrett-moore-/';
+	window.open(url, '_blank');
+});
+
+document.getElementById("linkedin-footer").addEventListener("click", function() {
+	// LinkedIn from Footer
 	const url = 'https://www.linkedin.com/in/garrett-moore-/';
 	window.open(url, '_blank');
 });
@@ -45,3 +57,9 @@ document.getElementById("resume-to-github").addEventListener("click", function()
 	const url = 'https://github.com/Garrett-M-code';
 	window.open(url, '_blank');
 });   
+
+document.getElementById("github-footer").addEventListener("click", function() {
+	// Github from Footer
+	const url = 'https://github.com/Garrett-M-code';
+	window.open(url, '_blank');
+}); 
