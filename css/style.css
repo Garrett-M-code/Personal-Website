@@ -169,13 +169,17 @@ li {
 	background-color: var(--background-color);
 	padding: 2em;
 	margin: auto;
-	background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%236473D2FF' stroke-width='4' stroke-dasharray='15%2c 20%2c 4%2c 20%2c 4%2c 20' stroke-dashoffset='6' stroke-linecap='square'/%3e%3c/svg%3e");
+	
+	border-left:solid var(--border-color) 0.2em ;
+	border-right:solid var(--border-color) 0.2em ;
 }
 
 .about-image {
 	width:30%; 
 	height: 50%; 
 	margin: auto; 
+	
+	box-shadow: 1em 1em var(--accent-color-blue);
 }
 
 .content-box {
@@ -255,7 +259,8 @@ li {
 	padding-right: 2em;
 	width: fit-content;
 	
-	
+	border-left:solid var(--border-color) 0.15em ;
+	border-right:solid var(--border-color) 0.15em ;
 	
 }
 
@@ -351,6 +356,10 @@ li {
 	padding-right: 1em;
 }
 
+.resume-bullet {
+	width: auto;
+}
+
 .resume-left-content-pane {
 	width: 100%;
 	position: static;
@@ -369,6 +378,10 @@ li {
 @media (max-width: 480px) { 
 .landing { background-size: 110% auto; 
 	background-position: center top; 
-	} 
+} 
+	
+.menu-left-align {
+	display: none;
+}
 }
 
