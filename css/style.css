@@ -199,6 +199,10 @@ li {
 	height: 100%;
 	width: 25%;
 	margin: 1em;
+	margin-bottom:2em;
+	
+	position: sticky;
+	top: 0;
 }
 
 .resume-right-content-pane {
@@ -341,10 +345,15 @@ li {
 .resume {
 	display: block;
 	height: auto;
+	
+	padding: 1em;
+	padding-left: 1em;
+	padding-right: 1em;
 }
 
 .resume-left-content-pane {
 	width: 100%;
+	position: static;
 }
 
 .resume-right-content-pane {
