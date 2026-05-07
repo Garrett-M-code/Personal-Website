@@ -184,6 +184,7 @@ li {
 	height: 100vh; 
 	width: 100%; 
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
 	background: url('../assets/backgrounds/waves.svg'); 
@@ -192,8 +193,8 @@ li {
 }
 
 .about-popup {
-	height: 50%;
-	width: 30%;
+	height: 30em;
+	width: 30em;
 	background-color: var(--background-color);
 	padding: 2em;
 	margin: auto;
@@ -203,8 +204,8 @@ li {
 }
 
 .about-image {
-	width:30%; 
-	height: 50%; 
+	width: 30em; 
+	height: auto; 
 	margin: auto; 
 	
 	box-shadow: 1.2em 1.2em var(--accent-color-blue);
@@ -368,11 +369,8 @@ li {
 }
 
 .about-me {
-	display: block;
-	height:auto;
-	justify-content: center;
-	align-items:center;
-	margin:auto;
+	height: auto;
+	margin: auto;
 }
 
 .about-popup {
@@ -384,7 +382,7 @@ li {
 
 .about-image {
 	display: block;
-	width: 100%;
+	width: 80vw;
 	object-fit: cover;
 	margin-top:1.5em;
 	margin-bottom: 1.5em;
