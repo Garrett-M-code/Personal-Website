@@ -9,6 +9,7 @@
 	--border-color: #383838;
 	--heading-color: #FFFFFF;
 	--sub-heading-color: #ABABAB;
+	--sub-heading-color-dark: #A5A5A5;
 	--content-color: #F9F9F9;
 	--accent-color-green: #68F96C;
 	--accent-color-red: #FF313F;
@@ -115,16 +116,14 @@ li {
 	margin-bottom: 2em;
 }
 
-/* The actual background image */
 .project-container::before {
 	content: "";
 	position: absolute;
 	inset: 0;
-	background: url('../assets/backgrounds/moon1.jpg') center/cover;
+	background: url('../assets/backgrounds/moon.webp') center/cover;
 	z-index: 1;
 }
 
-/* The blur layer */
 .project-container::after {
 	content: "";
 	position: absolute;
@@ -208,7 +207,7 @@ li {
 	height: 50%; 
 	margin: auto; 
 	
-	box-shadow: 1em 1em var(--accent-color-blue);
+	box-shadow: 1.2em 1.2em var(--accent-color-blue);
 }
 
 .content-box {
@@ -329,11 +328,26 @@ li {
 	font-style: normal;
 }
 
+.share-tech-mono-softer {
+	font-family: "Share Tech Mono", monospace;
+	font-weight: 400;
+	font-style: normal;
+	color: var(--sub-heading-color-dark);
+}
+
 .inter-body {
 	font-family: "Inter", sans-serif;
 	font-optical-sizing: auto;
 	font-weight: 400;
 	font-style: normal;
+}
+
+.inter-softer {
+	font-family: "Inter", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	color: var(--sub-heading-color-dark);
 }
 
 @media (max-width: 768px) {
@@ -413,7 +427,8 @@ li {
 }
 
 @media (max-width: 480px) { 
-.landing { background-size: 110% auto; 
+.landing { 
+	background-size: 110% auto; 
 	background-position: center top; 
 } 
 	
