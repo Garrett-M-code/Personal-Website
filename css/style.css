@@ -359,7 +359,7 @@ li {
 }
 
 .landing { 
-	background-size: 120% auto;
+	background-size: auto 140%;
 	background-position: center top; 
 	will-change: auto; 
 } 
@@ -426,7 +426,7 @@ li {
 
 @media (max-width: 480px) { 
 .landing { 
-	background-size: 110% auto; 
+	background-size: auto 150%; 
 	background-position: center top; 
 } 
 	
