@@ -27,6 +27,15 @@ window.addEventListener('scroll', () => {
     });
 });
 
+// Text "generation"
+const b = baffle('.landing-text');
+b.start()
+ .set({ characters: '░▒░ ░██░> ████▒ >█░░ ██', speed: 100 })
+ .reveal(2000); // Reveals the text over 1 second
+
+
+
+
 document.getElementById("portfolio-btn").addEventListener("click", function() {
 	// Redirect to Portfolio Portion
     window.location.href = "#portfolio";   
