@@ -1,22 +1,40 @@
 const spaceman = document.querySelector('.landing');
 
 window.addEventListener('scroll', () => {
-  const scrollY = window.scrollY;
+    // requestAnimationFrame ensures smooth execution on mobile browsers
+    window.requestAnimationFrame(() => {
+        const scrollY = window.scrollY;
+        const isMobile = window.innerWidth <= 768;
 
-  // --- Zoom Out ---
-  const startZoom = 140;  // starting zoom %
-  const endZoom = 100;    // final zoom %
-  const zoomSpeed = 0.05; // lower = slower zoom
+        // --- Zoom Logic ---
+        const startZoom = 140; 
+        const endZoom = 100;   
+        const zoomSpeed = 0.05;
+        const zoom = Math.max(startZoom - scrollY * zoomSpeed, endZoom);
 
-  const zoom = Math.max(startZoom - scrollY * zoomSpeed, endZoom);
+        // --- Parallax Movement ---
+        const moveSpeed = 0.3;
+        const offsetY = scrollY * moveSpeed;
 
-  // --- Parallax Movement ---
-  const moveSpeed = 0.3; // lower = slower movement
-  const offsetY = scrollY * moveSpeed;
+        if (isMobile) {
+            spaceman.style.backgroundSize = `auto ${zoom}%`;
+        } else {
+            spaceman.style.backgroundSize = `${zoom}% auto`;
+        }
 
-  spaceman.style.backgroundSize = `${zoom}% auto`;
-  spaceman.style.backgroundPosition = `center -${offsetY}px`;
+        // Apply Parallax (works for both)
+        spaceman.style.backgroundPosition = `center -${offsetY}px`;
+    });
 });
+
+// Text "generation"
+const b = baffle('.landing-text');
+b.start()
+ .set({ characters: '░▒░ ░██░> ████▒ >█░░ ██', speed: 100 })
+ .reveal(2000); // Reveals the text over 1 second
+
+
+
 
 document.getElementById("portfolio-btn").addEventListener("click", function() {
 	// Redirect to Portfolio Portion
